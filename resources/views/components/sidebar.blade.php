@@ -37,7 +37,7 @@
         </div>
     </aside>
 
-    <div class="px-4 py-10 sm:ml-44">
+    <div class="px-4 py-6 sm:ml-44">
         {{ $slot }}
     </div>
 

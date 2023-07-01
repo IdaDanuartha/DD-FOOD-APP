@@ -14,22 +14,22 @@
     <aside id="default-sidebar"
         class="fixed top-0 left-0 z-40 w-40 h-screen transition-transform -translate-x-full sm:translate-x-0 shadow-md shadow-[rgba(0,0,0,.05)]"
         aria-label="Sidebar">
-        <div class="h-full px-4 py-5 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div class="h-full px-4 py-10 overflow-y-auto bg-gray-50 dark:bg-gray-800">
          <a href="#" class="flex items-center pl-2.5 mb-5">
             <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white text-main-color">D&D FOOD</span>
          </a>
             <ul class="space-y-2 font-medium">
                 <li class="px-3">
-                    <a href="#"
-                        class="nav-item active flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700">
-                        <img src="{{ asset('assets/img/icons/home-icon.svg') }}" class="w-6 h-6" alt="">
+                    <a href="/home"
+                        class="nav-item {{ Request::is('home*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700">
+                        <span><i class="fa-solid fa-house fa-lg"></i></span>
                         <span class="">Home</span>
                     </a>
                 </li>
                 <li class="px-3">
-                    <a href="#"
-                        class="nav-item flex flex-col items-center px-2 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <img src="{{ asset('assets/img/icons/orders-icon.svg') }}" class="w-6 h-6" alt="">
+                    <a href="/orders"
+                        class="nav-item {{ Request::is('orders*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span><i class="fa-solid fa-list-check fa-lg"></i></span>
                         <span class="">Orders</span>
                     </a>
                 </li>
@@ -37,7 +37,7 @@
         </div>
     </aside>
 
-    <div class="p-4 sm:ml-64">
+    <div class="px-4 py-10 sm:ml-44">
         {{ $slot }}
     </div>
 

@@ -40,28 +40,59 @@
         <div id="myTabContent">
             <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <div class="grid grid-cols-3 gap-4">       
-                    <x-card :menus="$menus"></x-card>
+                    <x-menu-card :menus="$menus"></x-menu-card>
                 </div>
             </div>
             <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="best-sellers" role="tabpanel" aria-labelledby="best-sellers-tab">
                 <div class="grid grid-cols-3 gap-4">       
-                    <x-card :menus="$menus"></x-card>
+                    <x-menu-card :menus="$menus"></x-menu-card>
                 </div>
             </div>
             <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="promotion" role="tabpanel" aria-labelledby="promotion-tab">
                 <div class="grid grid-cols-3 gap-4">       
-                    <x-card :menus="$menus"></x-card>
+                    <x-menu-card :menus="$menus"></x-menu-card>
                 </div>
             </div>
             <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="new-comers" role="tabpanel" aria-labelledby="new-comers-tab">
                 <div class="grid grid-cols-3 gap-4">       
-                    <x-card :menus="$menus"></x-card>
+                    <x-menu-card :menus="$menus"></x-menu-card>
                 </div>
             </div>
         </div>
 
         </div>
-        <div class="col-span-1"></div>
+        <div class="col-span-1 fixed right-16">
+            <div class="bg-white w-full rounded-lg shadow-md p-4">
+                <div>
+                    <h1 class="font-semibold text-xl">My Orders</h1>
+                    <h3 class="text-gray-400 font-medium my-4">Items</h3>
+                </div>
+                <div class="h-[280px] overflow-y-scroll no-scrollbar">
+                    <x-cart-card :carts="$menus"></x-cart-card>
+                </div>
+                <div class="mt-10 border-b-[3px] pb-4 mb-4 border-gray-300 border-dashed">
+                    <div class="flex justify-between mb-2">
+                        <p class="text-gray-500">Subtotal</p>
+                        <p>Rp. 75.000</p>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <p class="text-gray-500">Discount</p>
+                        <p>Rp. 0</p>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <p class="text-gray-500">Tax (6%)</p>
+                        <p>Rp. 4.500</p>
+                    </div>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="font-semibold">Total</p>
+                    <p class="font-semibold">Rp. 79.500</p>
+                </div>
+                <div class="block">
+                    <button type="button" class="text-white bg-main-color hover:bg-main-color/90 focus:ring-4 focus:ring-main-color/50 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-main-color dark:hover:bg-main-color focus:outline-none dark:focus:ring-main-color w-full">Order Now</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

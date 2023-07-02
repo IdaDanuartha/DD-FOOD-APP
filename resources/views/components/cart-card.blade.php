@@ -2,7 +2,7 @@
 <div class="mb-4">
     <div class="flex">
         <img class="mr-2 rounded-md" src="https://picsum.photos/400/300" width="100" alt="">
-        <div class="my-1">
+        <div class="my-1 w-full">
             <h3 class="font-semibold text-md">{{ $cart['name'] }}</h3>
             <div class="flex items-center justify-between mt-1">
                 <p class="font-medium text-gray-600">Rp. 25.000</p>

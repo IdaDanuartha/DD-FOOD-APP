@@ -12,6 +12,9 @@
     {{-- Custom style --}}
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}" />
 
+    {{-- Swiper js --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
@@ -22,5 +25,16 @@
     </x-sidebar>
 
     @livewireScripts
+
+    {{-- Swiper js --}}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
 </body>
 </html>

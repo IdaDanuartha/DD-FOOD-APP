@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+  
 @layer base {
     body {
         background-color: #F4F4F4;        
+        @apply font-medium;
     }
     h1,h2,h3,h4,h5,h6,p {
         color: #222;

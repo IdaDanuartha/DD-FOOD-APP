@@ -9,8 +9,7 @@
                 <div class="swiper-slide">
                     <section class="my-5 bg-center bg-no-repeat bg-[url('https://marketplace.canva.com/EAFVfgsKMAE/1/0/1600w/canva-black-and-yellow-simple-minimalist-burger-promotion-banner-YTqWS2eL8TM.jpg')] bg-gray-700 bg-blend-multiply">
                         <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:py-30">
-                            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">We invest in the world's potential</h1>
-                            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">We invest in the world's potential</h1>                             
                             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                                 <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                                     Get started
@@ -26,8 +25,7 @@
                 <div class="swiper-slide">
                     <section class="my-5 bg-center bg-no-repeat bg-[url('https://marketplace.canva.com/EAFVfgsKMAE/1/0/1600w/canva-black-and-yellow-simple-minimalist-burger-promotion-banner-YTqWS2eL8TM.jpg')] bg-gray-700 bg-blend-multiply">
                         <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:py-30">
-                            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">We invest in the world's potential</h1>
-                            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">We invest in the world's potential</h1>                             
                             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                                 <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                                     Get started
@@ -41,7 +39,7 @@
                     </section>
                 </div>
             </div>
-            <div class="swiper-pagination relative top-5"></div>
+            <div class="swiper-pagination relative top-2"></div>
         </div>
 
         

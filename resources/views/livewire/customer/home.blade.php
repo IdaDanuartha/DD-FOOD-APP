@@ -43,19 +43,19 @@
         </div>
 
         
-        <div class="mb-4 border-b-2 border-gray-200 dark:border-gray-700">
+        <div class="mb-4 border-b-2 border-gray-200 dark:border-gray-700 tabs-group">
             <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-                <li class="mr-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="all-tab" data-tabs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">All</button>
+                <li class="tabs-item mr-2" role="presentation">
+                    <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg" id="all-tab" data-tabs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">All</button>
                 </li>
-                <li class="mr-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="best-sellers-tab" data-tabs-target="#best-sellers" type="button" role="tab" aria-controls="best-sellers" aria-selected="false">Best Sellers</button>
+                <li class="tabs-item mr-2" role="presentation">
+                    <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="best-sellers-tab" data-tabs-target="#best-sellers" type="button" role="tab" aria-controls="best-sellers" aria-selected="false">Best Sellers</button>
                 </li>
-                <li class="mr-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2   rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="promotion-tab" data-tabs-target="#promotion" type="button" role="tab" aria-controls="promotion" aria-selected="false">Promotion</button>
+                <li class="tabs-item mr-2" role="presentation">
+                    <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="promotion-tab" data-tabs-target="#promotion" type="button" role="tab" aria-controls="promotion" aria-selected="false">Promotion</button>
                 </li>
-                <li role="presentation">
-                    <button class="inline-block p-4 border-b-2   rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="new-comers-tab" data-tabs-target="#new-comers" type="button" role="tab" aria-controls="new-comers" aria-selected="false">New Comers</button>
+                <li class="tabs-item" role="presentation">
+                    <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="new-comers-tab" data-tabs-target="#new-comers" type="button" role="tab" aria-controls="new-comers" aria-selected="false">New Comers</button>
                 </li>
             </ul>
         </div>

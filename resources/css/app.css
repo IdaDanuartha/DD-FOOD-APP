@@ -28,6 +28,18 @@
     aside .nav-item.active span {
         @apply text-main-color;
     }
+
+    .tabs-group .tabs-item .tabs-btn[aria-selected="true"] {
+        @apply text-main-color border-main-color;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        @apply transition-all duration-300;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        @apply w-6 rounded bg-main-color;
+    }
 }
 
 @layer utilities {

@@ -4,7 +4,7 @@
         <div class="col-span-2">
         <x-search-input></x-search-input>
             
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper"> 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <section class="my-5 bg-center bg-no-repeat bg-[url('https://marketplace.canva.com/EAFVfgsKMAE/1/0/1600w/canva-black-and-yellow-simple-minimalist-burger-promotion-banner-YTqWS2eL8TM.jpg')] bg-gray-700 bg-blend-multiply">

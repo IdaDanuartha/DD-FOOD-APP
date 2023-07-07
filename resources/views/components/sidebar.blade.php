@@ -2,7 +2,7 @@
 
     <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
         type="button"
-        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        class="xl:block hidden items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
         <span class="sr-only">Open sidebar</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path clip-rule="evenodd" fill-rule="evenodd"
@@ -12,7 +12,7 @@
     </button> 
 
     <aside id="default-sidebar"
-        class="fixed top-0 left-0 z-40 w-40 h-screen transition-transform -translate-x-full sm:translate-x-0 shadow-md shadow-[rgba(0,0,0,.05)]"
+        class="xl:block hidden fixed top-0 left-0 z-40 w-40 h-screen transition-transform -translate-x-full sm:translate-x-0 shadow-md shadow-[rgba(0,0,0,.05)]"
         aria-label="Sidebar">
         <div class="h-full px-4 py-10 overflow-y-auto bg-gray-50 dark:bg-gray-800">
          <a href="#" class="flex items-center pl-2.5 mb-5">
@@ -37,7 +37,7 @@
         </div>
     </aside>
 
-    <div class="px-4 py-6 sm:ml-44">
+    <div class="px-4 py-6 xl:ml-44">
         {{ $slot }}
     </div>
 

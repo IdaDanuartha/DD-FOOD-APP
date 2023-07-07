@@ -23,6 +23,7 @@
     <x-sidebar>
         {{ $slot }}
     </x-sidebar>
+    <x-bottom-nav></x-bottom-nav>
 
     @livewireScripts
 

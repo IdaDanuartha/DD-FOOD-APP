@@ -83,7 +83,7 @@
             </div>
 
             </div>
-        <div class="xl:col-span-1 col-span-3 xl:relative fixed xl:z-1 z-[999] w-[94vw] cart-container" id="cartContainer">
+        <div class="xl:col-span-1 col-span-3 xl:relative fixed xl:z-1 z-[999] xl:w-full w-[94vw] cart-container" id="cartContainer">
             <div class="bg-white w-full rounded-lg shadow-md p-4">
                 <div>
                     <h1 class="font-semibold text-xl">My Orders</h1>

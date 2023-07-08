@@ -86,7 +86,12 @@
         <div class="xl:col-span-1 col-span-3 xl:relative fixed xl:z-1 z-[999] xl:w-full w-[94vw] cart-container" id="cartContainer">
             <div class="bg-white w-full rounded-lg shadow-md p-4">
                 <div>
-                    <h1 class="font-semibold text-xl">My Orders</h1>
+                    <div class="flex justify-between items-center">
+                        <h1 class="font-semibold text-xl">My Orders</h1>
+                        <span id="closeBtnCart" class="xl:hidden block">
+                            <i class="fa-solid fa-xmark fa-lg cursor-pointer duration-200 hover:text-main-color"></i>
+                        </span>
+                    </div>
                     <h3 class="text-gray-400 font-medium my-4">Items</h3>
                 </div>
                 <div class="{{ $menus->count() > 6 ? 'h-[59vh] overflow-y-scroll no-scrollbar':'' }}">

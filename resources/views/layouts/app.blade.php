@@ -39,8 +39,12 @@
 
         const btnCart = document.getElementById('btnCart')
         const cart = document.getElementById('cartContainer')
+        const closeBtnCart = document.getElementById('closeBtnCart')
 
         btnCart.addEventListener('click', function() {
+          cart.classList.toggle('active')
+        })
+        closeBtnCart.addEventListener('click', function() {
           cart.classList.toggle('active')
         })
       </script>

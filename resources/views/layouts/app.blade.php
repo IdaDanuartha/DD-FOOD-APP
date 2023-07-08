@@ -20,10 +20,20 @@
 </head>
 <body>
 
-    <x-sidebar>
+    @auth
+        
+    @endauth
+
+    @guest
+      @if(Request::is("admin/login*"))
         {{ $slot }}
-    </x-sidebar>
-    <x-bottom-nav></x-bottom-nav>
+      @else
+        <x-sidebar>
+          {{ $slot }}
+        </x-sidebar>
+        <x-bottom-nav></x-bottom-nav>
+      @endif
+    @endguest
 
     @livewireScripts
 

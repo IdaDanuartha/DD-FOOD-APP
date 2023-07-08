@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "main-color": "#FA6400"
+        "main-color": "#1A5D1A"
       },
       fontFamily: {
         "light": ["montserrat-light", 'arial', 'sans-serif'],

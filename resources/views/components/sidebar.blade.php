@@ -15,8 +15,10 @@
         class="xl:block hidden fixed top-0 left-0 z-40 w-40 h-screen transition-transform -translate-x-full sm:translate-x-0 shadow-md shadow-[rgba(0,0,0,.05)]"
         aria-label="Sidebar">
         <div class="h-full px-4 py-10 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-         <a href="#" class="flex items-center pl-2.5 mb-5">
-            <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white text-main-color">D&D FOOD</span>
+         <a href="#" class="flex items-center mb-5 justify-center">
+             <img src="{{ asset('assets/img/logo/v2.png') }}" width="80%" alt="">
+            {{-- <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white text-main-color">
+            </span> --}}
          </a>
             <ul class="space-y-2 font-medium">
                 <li class="px-3">
@@ -37,7 +39,7 @@
         </div>
     </aside>
 
-    <div class="px-4 py-6 xl:ml-44 xl:-mt-10 mt-0">
+    <div class="px-4 py-6 xl:ml-44 xl:-mt-10 mt-0 xl:mb-0 mb-12">
         {{ $slot }}
     </div>
 

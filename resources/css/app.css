@@ -14,7 +14,7 @@
 
 @layer components {
     aside .nav-item {
-        @apply hover:bg-[rgba(250,100,0,.15)] transition-all duration-300;
+        @apply hover:bg-[rgba(26,93,26,.15)] transition-all duration-300;
     }
 
     aside .nav-item:hover span {
@@ -22,7 +22,7 @@
     }
 
     aside .nav-item.active {
-        @apply bg-[rgba(250,100,0,.15)];
+        @apply bg-[rgba(26,93,26,.15)];
     }
 
     aside .nav-item.active span {

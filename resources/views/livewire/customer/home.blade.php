@@ -2,7 +2,7 @@
   
     <div class="grid grid-cols-3 gap-4"> 
         <div class="xl:col-span-2 col-span-3">
-            <x-search-input></x-search-input>
+            <x-search-input :categories="$categories"></x-search-input>
                 
             <div class="swiper mySwiper"> 
                 <div class="swiper-wrapper">
@@ -83,7 +83,7 @@
             </div>
 
             </div>
-        <div class="xl:col-span-1 col-span-3 xl:relative fixed xl:z-1 z-[999] xl:w-full w-[94vw] cart-container" id="cartContainer">
+        <div class="xl:col-span-1 col-span-3 xl:relative fixed xl:z-10 z-[999] xl:w-full w-[94vw] cart-container" id="cartContainer">
             <div class="bg-white w-full rounded-lg shadow-md p-4">
                 <div>
                     <div class="flex justify-between items-center">

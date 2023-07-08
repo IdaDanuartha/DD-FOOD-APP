@@ -52,6 +52,10 @@
             opacity: 1;
         }
     }
+
+    .error-input {
+        @apply border-red-500 !important;
+    }
 }
 
 @layer utilities {

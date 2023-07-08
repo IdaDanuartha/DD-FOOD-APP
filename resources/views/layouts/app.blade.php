@@ -23,8 +23,6 @@
 
     @if(Request::is("auth/login*"))
       {{ $slot }}
-    @elseif(Request::is("admin*"))
-      {{ $slot }}
     @else
       <x-sidebar>
         {{ $slot }}

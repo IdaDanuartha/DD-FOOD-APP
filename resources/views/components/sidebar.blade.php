@@ -21,20 +21,51 @@
             </span> --}}
          </a>
             <ul class="space-y-2 font-medium">
-                <li class="px-3">
-                    <a href="/home"
-                        class="nav-item {{ Request::is('home*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700">
-                        <span><i class="fa-solid fa-house fa-lg"></i></span>
-                        <span class="">Home</span>
-                    </a>
-                </li>
-                <li class="px-3">
-                    <a href="/orders"
-                        class="nav-item {{ Request::is('orders*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <span><i class="fa-solid fa-list-check fa-lg"></i></span>
-                        <span class="">Orders</span>
-                    </a>
-                </li>
+                @if (Request::is('admin*'))
+                    <li class="px-3">
+                        <a href="/admin/dashboard"
+                            class="nav-item {{ Request::is('admin/dashboard*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700">
+                            <span><i class="fa-solid fa-house fa-lg"></i></span>
+                            <span class="">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="px-3">
+                        <a href="/admin/menu"
+                            class="nav-item {{ Request::is('admin/menu*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <span><i class="fa-solid fa-list-check fa-lg"></i></span>
+                            <span class="">Menu</span>
+                        </a>
+                    </li>
+                    <li class="px-3">
+                        <a href="/admin/categories"
+                            class="nav-item {{ Request::is('admin/categories*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <span><i class="fa-solid fa-list-check fa-lg"></i></span>
+                            <span class="">Category</span>
+                        </a>
+                    </li>
+                    <li class="px-3">
+                        <a href="/admin/orders"
+                            class="nav-item {{ Request::is('admin/orders*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <span><i class="fa-solid fa-list-check fa-lg"></i></span>
+                            <span class="">Orders</span>
+                        </a>
+                    </li>
+                @else
+                    <li class="px-3">
+                        <a href="/home"
+                            class="nav-item {{ Request::is('home*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700">
+                            <span><i class="fa-solid fa-house fa-lg"></i></span>
+                            <span class="">Home</span>
+                        </a>
+                    </li>
+                    <li class="px-3">
+                        <a href="/orders"
+                            class="nav-item {{ Request::is('orders*') ? 'active' : '' }} flex flex-col items-center px-2 py-3 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <span><i class="fa-solid fa-list-check fa-lg"></i></span>
+                            <span class="">Orders</span>
+                        </a>
+                    </li>
+                @endif
             </ul>
         </div>
     </aside>

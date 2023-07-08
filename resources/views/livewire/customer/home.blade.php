@@ -61,35 +61,35 @@
             </div>
             <div id="myTabContent">
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="all" role="tabpanel" aria-labelledby="all-tab">
-                    <div class="grid grid-cols-3 gap-4">       
+                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="best-sellers" role="tabpanel" aria-labelledby="best-sellers-tab">
-                    <div class="grid grid-cols-3 gap-4">       
+                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="promotion" role="tabpanel" aria-labelledby="promotion-tab">
-                    <div class="grid grid-cols-3 gap-4">       
+                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="new-comers" role="tabpanel" aria-labelledby="new-comers-tab">
-                    <div class="grid grid-cols-3 gap-4">       
+                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
             </div>
 
             </div>
-        <div class="xl:col-span-1 col-span-3">
+        <div class="xl:col-span-1 col-span-3 xl:relative fixed xl:z-1 z-[999] w-[94vw] cart-container" id="cartContainer">
             <div class="bg-white w-full rounded-lg shadow-md p-4">
                 <div>
                     <h1 class="font-semibold text-xl">My Orders</h1>
                     <h3 class="text-gray-400 font-medium my-4">Items</h3>
                 </div>
-                <div class="h-[50vh] overflow-y-scroll no-scrollbar">
+                <div class="{{ $menus->count() > 6 ? 'h-[59vh] overflow-y-scroll no-scrollbar':'' }}">
                     <x-cart-card :carts="$menus"></x-cart-card>
                 </div>
                 <div class="mt-10 border-b-[3px] pb-4 mb-4 border-gray-300 border-dashed">

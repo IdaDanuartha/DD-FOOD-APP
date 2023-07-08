@@ -36,6 +36,13 @@
             el: ".swiper-pagination",
           },
         });
+
+        const btnCart = document.getElementById('btnCart')
+        const cart = document.getElementById('cartContainer')
+
+        btnCart.addEventListener('click', function() {
+          cart.classList.toggle('active')
+        })
       </script>
 </body>
 </html>

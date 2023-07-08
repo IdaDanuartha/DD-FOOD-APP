@@ -8,38 +8,7 @@ class Home extends Component
 {    
     public function render()
     {
-        $menus = [
-            [
-                'category' => 'junkfood',
-                'name' => 'Burger',
-                'price' => '35000',
-            ],
-            [
-                'category' => 'junkfood',
-                'name' => 'Ice Tea',
-                'price' => '5000',
-            ],
-            [
-                'category' => 'junkfood',
-                'name' => 'Burger',
-                'price' => '35000',
-            ],
-            [
-                'category' => 'junkfood',
-                'name' => 'Ice Tea',
-                'price' => '5000',
-            ],
-            [
-                'category' => 'junkfood',
-                'name' => 'Burger',
-                'price' => '35000',
-            ],
-            [
-                'category' => 'junkfood',
-                'name' => 'Ice Tea',
-                'price' => '5000',
-            ],
-        ];
+        // $menus = Menu
 
         return view('livewire.customer.home', compact('menus'));
     }

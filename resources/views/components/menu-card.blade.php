@@ -25,13 +25,13 @@
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 <!-- Modal body -->
                 <div class="p-6 space-y-6">
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
                         <div>
                             <img class="mr-2 rounded-md" src="https://picsum.photos/400/300" width="100%" alt="">    
                         </div>                        
                         <div class="my-1 w-full">
-                            <h4 class="font-semibold text-main-color text-sm capitalize">{{ $menu['category'] }}</h3>
-                            <h3 class="font-semibold text-2xl">{{ $menu['name'] }}</h3>
+                            <h4 class="font-semibold text-main-color text-sm capitalize">{{ $menu->category->name }}</h3>
+                            <h3 class="font-semibold text-2xl">{{ $menu->name }}</h3>
                             <p class="my-3 text-sm font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quidem nihil perspiciatis labore unde provident.</p>
                             <div class="flex items-center justify-between mt-1">
                                 <p class="font-medium text-lg text-gray-600">Rp. 25.000</p>

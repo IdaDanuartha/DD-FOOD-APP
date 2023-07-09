@@ -44,39 +44,39 @@
 
             
             <div class="mb-4 border-b-2 border-gray-200 dark:border-gray-700 tabs-group">
-                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                <ul class="flex -mb-px text-sm font-medium text-center overflow-x-scroll w-full no-scrollbar" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                     <li class="tabs-item mr-2" role="presentation">
                         <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg" id="all-tab" data-tabs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">All</button>
                     </li>
                     <li class="tabs-item mr-2" role="presentation">
-                        <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="best-sellers-tab" data-tabs-target="#best-sellers" type="button" role="tab" aria-controls="best-sellers" aria-selected="false">Best Sellers</button>
+                        <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 xs:w-full w-[120px]" id="best-sellers-tab" data-tabs-target="#best-sellers" type="button" role="tab" aria-controls="best-sellers" aria-selected="false">Best Sellers</button>
                     </li>
                     <li class="tabs-item mr-2" role="presentation">
                         <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="promotion-tab" data-tabs-target="#promotion" type="button" role="tab" aria-controls="promotion" aria-selected="false">Promotion</button>
                     </li>
                     <li class="tabs-item" role="presentation">
-                        <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="new-comers-tab" data-tabs-target="#new-comers" type="button" role="tab" aria-controls="new-comers" aria-selected="false">New Comers</button>
+                        <button class="tabs-btn inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 xs:w-full w-[130px]" id="new-comers-tab" data-tabs-target="#new-comers" type="button" role="tab" aria-controls="new-comers" aria-selected="false">New Comers</button>
                     </li>
                 </ul>
             </div>
             <div id="myTabContent">
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="all" role="tabpanel" aria-labelledby="all-tab">
-                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
+                    <div class="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="best-sellers" role="tabpanel" aria-labelledby="best-sellers-tab">
-                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
+                    <div class="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="promotion" role="tabpanel" aria-labelledby="promotion-tab">
-                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
+                    <div class="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
                 <div class="hidden py-4 rounded-lg dark:bg-gray-800" id="new-comers" role="tabpanel" aria-labelledby="new-comers-tab">
-                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4">       
+                    <div class="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-4">       
                         <x-menu-card :menus="$menus"></x-menu-card>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                     </div>
                     <h3 class="text-gray-400 font-medium my-4">Items</h3>
                 </div>
-                <div class="{{ $menus->count() > 6 ? 'h-[59vh] overflow-y-scroll no-scrollbar':'' }}">
+                <div class="{{ $menus->count() > 5 ? 'xs:h-[55vh] 2xs:h-[50vh] h-[40vh] overflow-y-scroll no-scrollbar':'' }}">
                     <x-cart-card :carts="$menus"></x-cart-card>
                 </div>
                 <div class="mt-10 border-b-[3px] pb-4 mb-4 border-gray-300 border-dashed">

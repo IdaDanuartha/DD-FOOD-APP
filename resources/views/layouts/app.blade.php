@@ -40,6 +40,7 @@
           pagination: {
             el: ".swiper-pagination",
           },
+          loop: true
         });
 
         const btnCart = document.getElementById('btnCart')
@@ -48,9 +49,13 @@
 
         btnCart.addEventListener('click', function() {
           cart.classList.toggle('active')
+          document.body.classList.toggle('no-scrollbar')
+          document.body.classList.toggle('overflow-y-hidden')
         })
         closeBtnCart.addEventListener('click', function() {
           cart.classList.toggle('active')
+          document.body.classList.toggle('no-scrollbar')
+          document.body.classList.toggle('overflow-y-hidden')
         })
       </script>
 </body>
